@@ -95,7 +95,9 @@ nav ul li + li {
   display: none;
 }
 
-
+.orange {
+  color: var(--app-orange);
+}
 /* HERO BANNER */
 
 #hero {
@@ -157,6 +159,7 @@ nav ul li + li {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
 .button:hover {
   background-color: var(--app-orange);
   color: #fff;
@@ -181,74 +184,54 @@ nav ul li + li {
 .page3 {
   background-color: #16232d;
   padding: 5% 0px;
-}
-.page4 {
-  background-color: #192a36;
-  padding: 5% 0px;
-}
-.page3-box {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 20px 0;
-
-  opacity: 0;
-  transition: all 1s;
-
-  opacity: 0;
-  transition: all 2s;
-
-  filter: blur(5px);
-  transform: translate(-100%);
+  display: grid;
+  justify-content: center;
 }
 
-.page3-box-1 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 20px 0;
-  opacity: 0;
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(100%);
+.bottom {
+  display: grid;
+
 }
 
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translate(0);
-}
-.page3-img {
-  max-width: 450px;
+#map {
+  height: 100%;
   width: 100%;
 }
-.information {
-  flex: 1;
-  padding-left: 70px;
-}
-button.learn-more {
-  background-color: #fff;
-  color: #292b2c;
-}
-.info-title {
-  color: var(--app-orange);
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 0.6px;
-}
-.info-all {
-  color: #fff;
-  margin-bottom: 20px;
-  line-height: 1.4;
-  font-size: 17px;
-  letter-spacing: 0.4px;
+
+.grid {
+   min-height: 540px;
+    width: 793px;
+    border-radius: 50px;
+    border: solid 1px var(--app-grey);
+    margin-top: 15px;
+  
 }
 
-.items ul li {
-  color: var(--app-grey);
-  font-size: 20px;
-  letter-spacing: 0.4px;
-  list-style-image: url(../Images/list.png) center center / auto no-repeat;
+.data {
+  display: grid;
+  margin-top: 15px;
+}
+
+.data p {
+  color:var(--app-orange);
+  font-size: 18px;
+  text-align: center;
+}
+
+.track {
+  padding: 12px 17px;
+  border-radius: 5px;
+  border: 0;
+  font-weight: bold;
+  background-color: #fff;
+  font-size: 100%;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.track:hover {
+  background-color: var(--app-orange);
+  color: #fff;
 }
 
 /* CONTENT ENDS */
@@ -302,3 +285,13 @@ footer .flex {
 }
 
 /* FOOTER ENDS */
+
+
+.marker {
+  background-image: url('../images/mapbox-icon.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}

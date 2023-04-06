@@ -8,6 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servify</title>
     <link rel="stylesheet" href="./assets/style/index.css" media="all">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+    type="text/css"
+  />
     <script defer src="./assets/script/index.js"></script>
     <link rel="Shortcut icon" href="./assets/images/icons.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +30,7 @@
 
   <header>
     <div class="flex container">
-      <h1 class="heading">Servify</h1>
+      <h1 class="heading"><span class="orange">S</span>ervify</h1>
       <nav>
 
         <ul>
@@ -62,13 +70,25 @@
     <section id="services container">
         <div class="page3">
             <div class="name1">Our Location tracking system</div>
+           <div class="bottom">
+            <div class="data">
+                <p>Whether it's one package or multiple shipments,
+                     track your orders all at once. <br>
+                     <span class="red">S</span class="orange">ervify offers real-time tracking.</p>
+                     <button class="track">Track your Package</button>    
+            </div>
+            <div class="grid">
+                <div id="map"></div>
+            </div>
+            
+        </div>
         </div>
         </section>
   </main>
   <footer>
     <div class="container flex foot-1">
       <div class="end">
-        <p>&copy;Copyright by <span>S</span>hubham</p>
+        <p>&copy;Copyright by <span class="orange">S</span>hubham</p>
       </div>
       <div class="social">
         <a href="#"><i class="fa-brands fa-github"></i></a>
