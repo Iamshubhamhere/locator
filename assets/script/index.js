@@ -63,7 +63,7 @@ function setupMap(center) {
 
   map.addControl(directions, "top-left")
   const marker = new mapboxgl.Marker({
-    color: "#ffa500",
+    color: "#3c57ff",
     draggable: true
   }).setLngLat(center)
     .addTo(map);
