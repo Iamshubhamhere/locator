@@ -38,12 +38,12 @@ trackBtn.addEventListener('click', function(){
 
 flyToBtn.addEventListener('click', () => {
   map.flyTo({
-    center: [lat , long],
+    center: [long , lat],
     duration: 3,
     easeLinearity: 0.5,
     essential: true
   });
-  console.log('hey there00');
+  
 })
 
 function setupMap(center) {
