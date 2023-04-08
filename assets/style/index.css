@@ -295,3 +295,21 @@ footer .flex {
   border-radius: 50%;
   cursor: pointer;
 }
+
+
+#fly-btn {
+  position: relative;
+  bottom: 90px;
+  left: 700px;
+  visibility: hidden;
+  margin: 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: #1DA1F2;
+}
+
+#fly-btn i {
+  font-size: 30px;
+  color: #fff;
+}
